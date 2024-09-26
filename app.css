@@ -1,0 +1,502 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    background: url('neelum_pic.jpg') no-repeat center center fixed;
+    background-size:cover;
+    height: 100vh;
+    
+  }
+  
+
+  .PAK {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .PAK h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .PAK h1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+  
+  .PAK p {
+    font-size: 1.2em;
+    text-align: center;
+    display: grid;
+    grid-template-rows:auto
+  }
+  
+
+  .mountains{
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .mountains h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .mountains p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+
+
+
+
+body{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: smaller;
+    margin:0;
+    padding: 0;
+    background-color: black;
+    
+}
+
+nav{
+    background-color:black;
+    padding: 20px;
+    flex-wrap: wrap;
+  
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    float: left;
+    width:25%;
+    margin: 0 15px;
+}
+nav ul li a {
+    color:#ffa260;
+    text-decoration: none; 
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: all 0.35s;
+    background: none;
+    border:2px solid black
+}
+
+nav ul li a:hover{
+border-color: #f1ff5c;
+color: white;
+box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+transform: translateY(-0.25em);
+}
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media(max-width: 800px){
+    nav ul {
+        flex-direction:column;
+        align-items:center;
+}
+}
+@media(max-width: 800px){
+    main {
+        display: flex;
+        align-items:center;
+}}
+
+.Most_beautiful_places_in_pak{
+    border:5px solid black;
+    background-color: rgb(1, 65, 65);
+    color: white;
+}
+p{
+    font-size:large;
+    color: white;
+}
+
+.Hunza{
+    border:2px solid black;
+    background-color: black;
+    color: #ffa260;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.Hunza:hover{
+color: white;
+box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+transform: translateY(-0.25em);
+}
+
+.hunza_pic{
+    width: 600px;
+    height: 300px;
+    transition: all 0.35s;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+.hunza_pic:hover{
+    transform: translateY(-0.25em);
+}
+
+@media screen and (max-width: 600px) {
+    .Hunza{
+        flex-direction: column;
+        text-align: center;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    }
+}
+
+.Skardu{
+    border:2px solid black;
+    background-color: black;
+    color: #ffa260;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    transition: all 0.35s;
+   
+}
+.Skardu:hover{
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    }
+
+    .skardu_pic{
+        width: 600px;
+        height: 300px;
+        color: aqua;
+        border:2px solid black;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        align-items: center;
+        text-align: center;
+        transition: all 0.35s;
+    }
+    .skardu_pic:hover{
+        box-shadow: 0 0.5em 0.5em -0.4em aqua;
+        transform: translateY(-0.5em);
+    }
+    .Swat_Valley{
+        border:2px solid black;
+        background-color: black;
+        color: #ffa260;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+        text-align: center;
+        transition: all 0.35s;
+    }
+    .Swat_Valley:hover{
+        color: white;
+        box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+        transform: translateY(-0.25em);
+        }
+        
+        .swat_pic{
+            width: 600px;
+            height: 300px;
+            color: aqua;
+            border:2px solid black;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.35s;
+            flex-wrap: wrap;
+        }
+        .swat_pic:hover{
+            box-shadow: 0 0.5em 0.5em -0.4em aqua;
+            transform: translateY(-0.5em);}
+
+            .Neelum_Valley{
+                border:2px solid black;
+                background-color: black;
+                color: #ffa260;
+                display: grid;
+                grid-template-columns: 1fr;            
+                text-align: center;
+                transition: all 0.35s;
+            }
+            .Neelum_Valley:hover{
+                color: white;
+                box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+                transform: translateY(-0.25em);
+                }
+                
+                .neelum_pic{
+                    width: 600px;
+                    height: 300px;
+                    color: aqua;
+                    border:2px solid black;
+                    background-color: aqua;
+                    display: grid;
+    grid-template-columns: 1fr 1fr;
+                    text-align: center;
+                    transition: all 0.35s;
+                }
+                .neelum_pic:hover{
+                    box-shadow: 0 0.5em 0.5em -0.4em aqua;
+                    transform: translateY(-0.5em);}
+                    
+.Travel {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .Travel h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: yellow;
+  }
+  
+  .Travel p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .Travel strong {
+    font-size: 1.3em;
+  }
+  
+  .Travel em {
+    color: yellow;
+  }
+  
+  .Travel hr {
+    width: 80%;
+    margin: 20px auto;
+    border-color: white;
+  }
+  
+  .TravelGuide {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.TravelGuide h1 {
+    font-size: 2.5em;
+    color: yellow;
+}
+
+.TravelGuide hr {
+    width: 80%;
+    margin: 20px auto;
+    border-color: white;
+}
+
+.pack, .safety, .best, .transport {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.packing_pic, .safety_pic, .weather, .transport_bus {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.packing_txt, .safety_txt, .best_txt, .transport_txt {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border-color: white;
+}
+
+@media (max-width: 768px) {
+    .pack, .safety, .best, .transport {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .packing_pic, .safety_pic, .weather, .transport_bus {
+        margin: 0 auto 20px;
+    }
+}
+.contact-form{
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    background-color: black;
+    border:2px solid yellow;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    transition: all 0.35s;
+    margin: auto;
+    
+}
+.contact-form:hover{
+    border-color: #f1ff5c;
+color: white;
+box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+transform: translateY(-0.25em);
+
+}
+.contact-form hr {
+    width: 100%; 
+    margin: 10px 0;  
+    border: none;
+    border-top: 1px solid black; 
+}
+button{
+width: 100px;
+    background-color:black;
+    align-content: center;
+    color: white;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    transition: all 0.35s;
+}
+button:hover{
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    
+}
+
+.index_footer{
+    float: left;
+}
+
+main{
+    float: left;
+}
+
+/* Basic styles */
+.logo {
+    color: #ffa260;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Hide burger menu checkbox */
+.burger_menu {
+    display: none;
+}
+
+/* Burger menu icon */
+.burger_menu_label {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.burger_menu_label span {
+    background-color: #ffa260;
+    height: 2px;
+    width: 25px;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .burger_menu:checked ~ ul {
+        display: flex;
+    }
+
+    .burger_menu_label {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        width: 100%;
+    }
+}
